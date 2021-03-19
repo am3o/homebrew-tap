@@ -12,19 +12,19 @@ class Pure < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/Am3o/pure/releases/v1.0.1/pure_1.0.1_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "d526f9c45bdc2dc8304474a7c7c57f63e97b9b5466be5c0a1e867234ecbdc926"
+    sha256 "8a9dca150b04c963d6dc110ab33dedb79d228ce38c44f48c924b238b285d5841"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/Am3o/pure/releases/v1.0.1/pure_1.0.1_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "446dec09e636dcbcceeb0712f80ac3c06231bd020824eb2bbe0acc8b87571df0"
+    sha256 "15f0340e4ebdc65824ea37054e26d99e3f50f876ef1dc33cbbb8450cc49ff20b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/Am3o/pure/releases/v1.0.1/pure_1.0.1_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "5e77e4541d495294258b6be781ee2f0067486687cf1a4aef7b80e4e9bae15ce6"
+    sha256 "79603cbb54fcf263a1fc64fccacead0bf394a2563e797c8e46aa1be6699b7441"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/Am3o/pure/releases/v1.0.1/pure_1.0.1_Linux_arm64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "caef546764b865eebfd1d5d71393c1f8ae4d8be98ff53011d7a6ad9edabaf355"
+    sha256 "d3ef600fbd8e45415c9aa398fc87b39a628ba045f36a11137cc6bd7f25ee4a7e"
   end
 
   def install
