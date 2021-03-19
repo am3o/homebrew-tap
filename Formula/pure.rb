@@ -5,24 +5,24 @@
 class Pure < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://github.com/am3o/pure"
-  version "1.0.1"
+  version "1.1.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Am3o/pure/releases/download/v1.0.1/pure_1.0.1_Darwin_x86_64.tar.gz"
-    sha256 "10c9043a20e9feceedf347a343378ec7a784ff4195601bbc792b19202ee298b9"
+    url "https://github.com/Am3o/pure/releases/download/v1.1.0/pure_1.1.0_Darwin_x86_64.tar.gz"
+    sha256 "e664e23cad84773a96e24061e89f692156e1b09011c3720e749e79f69aa90e37"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Am3o/pure/releases/download/v1.0.1/pure_1.0.1_Darwin_arm64.tar.gz"
-    sha256 "f7af40c303af2a32cdaaf178d5daadc8305277425d02400db02827fa0c0acc8e"
+    url "https://github.com/Am3o/pure/releases/download/v1.1.0/pure_1.1.0_Darwin_arm64.tar.gz"
+    sha256 "6a03f83088b200a371ad33bf9d95530f08633dbb18b92a7011e8884f5c982ef8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Am3o/pure/releases/download/v1.0.1/pure_1.0.1_Linux_x86_64.tar.gz"
-    sha256 "882940ec0a70dfa242bd473d1e67944b96badda8f06e7935002cd7063fce309e"
+    url "https://github.com/Am3o/pure/releases/download/v1.1.0/pure_1.1.0_Linux_x86_64.tar.gz"
+    sha256 "caa47f6117d5cd671e8722d074bb3006327a677820f6d359dfc2c5ff4ddd1540"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Am3o/pure/releases/download/v1.0.1/pure_1.0.1_Linux_arm64.tar.gz"
-    sha256 "49f25a59dcfcbdef5fdae7a131947c342dcebc4fdc74613c1bb9c3de13b3dd20"
+    url "https://github.com/Am3o/pure/releases/download/v1.1.0/pure_1.1.0_Linux_arm64.tar.gz"
+    sha256 "397c8aa9dc42f470aee9b80562008cb53124ef0896fa1363f68709e7bc41f825"
   end
 
   def install
